@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (PlayerPrefs.GetInt("MaxHP") == null || PlayerPrefs.GetInt("MaxHP") == 0)
+        if (PlayerPrefs.GetInt("MaxHP") == -1 || PlayerPrefs.GetInt("MaxHP") == 0)
         { PlayerPrefs.SetInt("PlayerLvl",2);
             PlayerPrefs.SetInt("MaxHP", 30);
             PlayerPrefs.SetInt("CurrentHP",30);
